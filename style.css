@@ -1,0 +1,45 @@
+.parent {
+    display: grid;
+    grid-template-areas: 'header header header header'
+        'navigation navigation navigation navigation'
+        'content main main content2'
+        'footer footer footer footer'
+    ;
+    height: 100vh;
+    grid-template-rows: 1fr 1fr 3fr 1fr;
+    grid-template-columns: 2fr 3fr 3fr 2fr;
+    gap: 10px;
+}
+
+.parent>div {
+    background-color: rgba(211, 234, 246, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+
+}
+
+.box1 {
+    grid-area: header;
+}
+
+.box2 {
+    grid-area: navigation;
+}
+
+.box3 {
+    grid-area: content;
+   
+}
+
+.box4 {
+    grid-area: main;
+}
+
+.box5 {
+    grid-area: content2;
+}
+
+.box6 {
+    grid-area: footer;
+}
